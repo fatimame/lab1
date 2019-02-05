@@ -44,7 +44,7 @@ exercise2 is a function that returns 42 (instead of failing). When you
 submit, the Exercise 2 unit test should then pass.
 ......................................................................*)
 
-let exercise2 () = failwith "exercise2 not implemented" ;;
+let exercise2 () = 42 ;;
 
 (* From here on, you'll want to test your lab solutions locally before
 submitting them at the end of lab to Gradescope. A simple way to do that
@@ -101,7 +101,7 @@ appropriate OCaml expression to assign the value to the variable
 exercise1 below.
 ......................................................................*)
 
-let exercise3 () = failwith "exercise3 not implemented" ;;
+let exercise3 () = ~-(5 - 3) ;;
 
 (* Hint: The OCaml concrete expression
 
@@ -113,8 +113,14 @@ does *not* correspond to the abstract syntax above.
 Exercise 4: Draw the tree that the concrete syntax "~- 5 - 3" does
 correspond to. Check it with a member of the course staff if you'd
 like.
+   -   
+   ^  
+  / \
+ /   \
+~-    3
+|
+5
 ......................................................................*)
-
 
 (*......................................................................
 Exercise 5: Associativity plays a role in cases when two operators
@@ -136,6 +142,7 @@ evaluates to two different results dependent on the associativity of
 the operator. Use this expression to determine the associativity of
 the operator. Check your answer with a member of the course staff if
 you'd like.
+
 ......................................................................*)
 
 (*======================================================================
