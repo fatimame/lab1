@@ -143,6 +143,9 @@ the operator. Use this expression to determine the associativity of
 the operator. Check your answer with a member of the course staff if
 you'd like.
 
+(10 / 2) / 4 = 5/4 and 10 / (2 / 4) = 20 
+	So, "/" is left associative
+
 ......................................................................*)
 
 (*======================================================================
@@ -155,25 +158,21 @@ expressions below? Test your solution by uncommenting the examples
 error is generated.
 ......................................................................*)
 
-(*  <--- After you've replaced the ???s, remove this start of comment line
+let exercise6a : int = 42 ;;
 
-let exercise6a : ??? = 42 ;;
-
-let exercise6b : ??? =
+let exercise6b : string =
   let greet y = "Hello " ^ y
   in greet "World!";;
 
-let exercise6c : ??? =
+let exercise6c : float =
   fun x -> x +. 11.1 ;;
 
-let exercise6d : ??? =
+let exercise6d : int =
   fun x -> x < x + 1 ;;
 
-let exercise6e : ??? =
+let exercise6e : int =
   fun x -> fun y -> x + int_of_float y ;;
 
-
-and remove this whole end of comment line too. ---->  *)
 
 (*======================================================================
 Part 3: First-order functional programming
