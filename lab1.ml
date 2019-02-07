@@ -203,9 +203,8 @@ functions in the lab to get some practice with automated unit testing.
 ......................................................................*)
 
 let square (x : int) : int  =
-  failwith "square not implemented" ;;
-
-let exercise7 = 0 ;;
+  x * x ;;
+let exercise7 = square 5 ;;
 
 (*......................................................................
 Exercise 8: Define a function say_hello that, given a name, creates a
@@ -224,7 +223,10 @@ to the function.
 ......................................................................*)
 
 let say_hello (name : string) : string =
-  failwith "say_hello not implemented";;
+	"Hi "^name^". " ^
+	  (if name = "Gabby" || name = "gabby"
+  		then "Welcome home!" else " ") ^
+  		"How are you today?" ;;
 
 (*......................................................................
 Exercise 9: Define a function, small_bills, that determines, given a
